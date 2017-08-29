@@ -1,0 +1,23 @@
+*** WindowManagerService.smali	2017-08-29 18:15:06.274432790 +0530
+--- WindowManagerService.smali	2017-08-29 18:21:45.926455207 +0530
+***************
+*** 708,716 ****
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mCurrentProfileIds:[I
+  
+!     new-instance v7, Lcom/android/server/policy/PhoneWindowManager;
+  
+!     invoke-direct {v7}, Lcom/android/server/policy/PhoneWindowManager;-><init>()V
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+  
+--- 708,716 ----
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mCurrentProfileIds:[I
+  
+!     new-instance v7, Lcom/android/server/policy/MiuiPhoneWindowManager;
+  
+!     invoke-direct {v7}, Lcom/android/server/policy/MiuiPhoneWindowManager;-><init>()V
+  
+      iput-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+  
