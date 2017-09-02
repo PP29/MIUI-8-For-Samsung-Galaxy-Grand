@@ -226,7 +226,7 @@
     return-void
 .end method
 
-.method private constructor <init>()V
+.method constructor <init>()V
     .locals 4
 
     .prologue
@@ -959,10 +959,10 @@
     if-nez v0, :cond_0
 
     .line 284
-    new-instance v0, Landroid/content/res/Resources;
+    new-instance v0, Landroid/content/res/MiuiResources;
 
     .end local v0    # "ret":Landroid/content/res/Resources;
-    invoke-direct {v0}, Landroid/content/res/Resources;-><init>()V
+    invoke-direct {v0}, Landroid/content/res/MiuiResources;-><init>()V
 
     .line 285
     .restart local v0    # "ret":Landroid/content/res/Resources;
