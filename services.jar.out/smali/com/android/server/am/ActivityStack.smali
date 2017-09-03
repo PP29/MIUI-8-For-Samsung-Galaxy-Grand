@@ -1992,8 +1992,7 @@
 
     aput-object v4, v1, v6
 
-    .line 3977
-    invoke-static {v0, v1}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
+    invoke-static {p1, p3}, Lcom/android/server/am/ActivityStackHook;->writeAmRelaunchActivityEventLog(Lcom/android/server/am/ActivityRecord;Z)V
 
     .line 3981
     iget-object v0, p1, Lcom/android/server/am/ActivityRecord;->app:Lcom/android/server/am/ProcessRecord;
@@ -4391,7 +4390,7 @@
     .line 1936
     const/16 v4, 0x7537
 
-    invoke-static {v4, v3}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
+    invoke-static/range {v26 .. v26}, Lcom/android/server/am/ActivityStackHook;->writeAmResumeActivityEventLog(Lcom/android/server/am/ActivityRecord;)V
 
     .line 1939
     const/4 v3, 0x0
@@ -5160,7 +5159,7 @@
     .line 940
     const/16 v1, 0x753c
 
-    invoke-static {v1, v2}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
+    invoke-static {p0, v0}, Lcom/android/server/am/ActivityStackHook;->writeAmFailedToPauseEventLog(Lcom/android/server/am/ActivityStack;Lcom/android/server/am/ActivityRecord;)V
 
     .line 944
     iget-boolean v1, v0, Lcom/android/server/am/ActivityRecord;->finishing:Z
@@ -6402,7 +6401,7 @@
     .line 3346
     const/16 v6, 0x7542
 
-    invoke-static {v6, v5}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
+    invoke-static {p1, p3}, Lcom/android/server/am/ActivityStackHook;->writeAmDestroyActivityEventLog(Lcom/android/server/am/ActivityRecord;Ljava/lang/String;)V
 
     .line 3350
     const/4 v3, 0x0
